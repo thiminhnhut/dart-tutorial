@@ -113,3 +113,10 @@
 | `&&`    | AND     | `true && true`    | `true`  |
 | `\|\|`  | OR      | `true \|\| false` | `true`  |
 | `!`     | NOT     | `!true`           | `false` |
+
+## Biểu thức điều kiện
+
+| Toán tử                           | Ý nghĩa                                                                             | Ví dụ          | Kết quả |
+| --------------------------------- | ----------------------------------------------------------------------------------- | -------------- | ------- |
+| `condition ? result 1 : result 2` | Nếu `condition` đúng thì trả về `result 1`, ngược lại thì `result 2`                | `true ? 1 : 2` | `1`     |
+| `exp1 ?? exp2`                    | Nếu `exp1` khác `null` thì lấy kết quả `exp1`, ngược lại thì lấy kết quả của `exp2` | `1 ?? 2`       | `1`     |
