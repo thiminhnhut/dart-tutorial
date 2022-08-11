@@ -1,6 +1,10 @@
 # Một số cú pháp cơ bản trong ngôn ngữ lập trình Dart
 
-- Nguồn tham khảo: [Biến (Variable) trong ngôn ngữ Dart](https://openplanning.net/13913/dart-variables)
+- Nguồn tham khảo:
+  
+  - [Biến (Variable) trong ngôn ngữ Dart](https://openplanning.net/13913/dart-variables)
+
+  - [Dart Programming Tutorial](https://www.tutorialspoint.com/dart_programming/index.htm)
 
 ## Khai báo biến
 
