@@ -252,3 +252,47 @@
            break;
      }
      ```
+
+## Kiểu dữ liệu Number
+
+1. Kiểu số nguyên (`int`) và kiểu số thực `double`.
+
+     ```dart
+     int a = 1;
+     double b = 1.0;
+     ```
+
+1. Hàm `parse('string_number)` dùng để chuyển đổi chuỗi `string_number` thành số.
+
+     ```dart
+     var a = int.parse('1');
+     var b = double.parse('1.0');
+     ```
+
+1. Một số thuộc tính của kiểu Number:
+
+   | Thuộc tính | Ý nghĩa          | Ví dụ        | Kết quả |
+   | ---------- | ---------------- | ------------ | ------- |
+   | `isEven`   | Kiểm tra số chẵn | `1.isEven`   | `false` |
+   | `isOdd`    | Kiểm tra số lẻ   | `1.isOdd`    | `true`  |
+   | `negative` | Kiểm tra số âm   | `1.negative` | `false` |
+   | `sign`     | Kiểm tra dấu     | `1.sign`     | `1`     |
+   |            |                  | `-1.sign`    | `-1`    |
+   |            |                  | `0.sign`     | `0`     |
+
+1. Một số hàm toán học:
+
+   | Hàm           | Ý nghĩa                                  | Ví dụ              | Kết quả |
+   | ------------- | ---------------------------------------- | ------------------ | ------- |
+   | `abs()`       | Trị tuyệt đối                            | `(-1).abs()`       | `1`     |
+   | `ceil()`      | Làm tròn lên                             | `(1.1).ceil()`     | `2`     |
+   | `floor()`     | Làm tròn xuống                           | `(1.9).floor()`    | `1`     |
+   | `round()`     | Làm tròn                                 | `(1.5).round()`    | `2`     |
+   | `toInt()`     | Chuyển `double` sang kiểu `int`          | `(1.0).toInt()`    | `1`     |
+   | `toDouble()`  | Chuyển `int` sang kiểu `double`          | `(1).toDouble()`   | `1.0`   |
+   | `toString()`  | Chuyển `int, double` sang kiểu `string`  | `(1).toString()`   | `'1'`   |
+   | `compareTo()` | So sánh 2 số  `a > b` ra `-1`            | `1.compareTo(2)`   | `-1`    |
+   |               | So sánh 2 số  `a == b` ra `0`            | `1.compareTo(1)`   | `0`     |
+   |               | So sánh 2 số  `a < b` ra `1`             | `1.compareTo(0)`   | `1`     |
+   | `remainder()` | Lấy phần dư  của `a` chia cho `b`        | `5.remainder(2)`   | `1`     |
+   | `truncate()`  | Làm tròn xuống và loại bỏ phần thập phân | `(1.9).truncate()` | `1`     |
