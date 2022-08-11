@@ -120,3 +120,85 @@
 | --------------------------------- | ----------------------------------------------------------------------------------- | -------------- | ------- |
 | `condition ? result 1 : result 2` | Nếu `condition` đúng thì trả về `result 1`, ngược lại thì `result 2`                | `true ? 1 : 2` | `1`     |
 | `exp1 ?? exp2`                    | Nếu `exp1` khác `null` thì lấy kết quả `exp1`, ngược lại thì lấy kết quả của `exp2` | `1 ?? 2`       | `1`     |
+
+## Vòng lặp với số lần xác định
+
+1. Vòng lặp `for`
+
+     ```dart
+     for (var i = 0; i < 5; i++) {
+        print(i);
+     }
+     ```
+
+1. Vòng lặp `for in`:
+
+
+    ```dart
+    var list = [1, 2, 3];
+    for (var i in list) {
+        print(i);
+    }
+    ```
+
+## Vòng lặp với số lần không xác định
+
+1. Vòng lặp `while`
+
+     ```dart
+     var i = 0;
+     while (i < 5) {
+        print(i);
+        i++;
+     }
+     ```
+
+1. Vòng lặp `do while`
+
+     ```dart
+     var i = 0;
+     do {
+        print(i);
+        i++;
+     } while (i < 5);
+     ```
+
+## Break và Continue trong vòng lặp
+
+1. `break` dùng để thoát khỏi vòng lặp
+
+     ```dart
+     for (var i = 0; i < 5; i++) {
+        if (i == 3) {
+           break;
+        }
+        print(i);
+     }
+     ```
+
+1. `continue` dùng để bỏ qua các lệnh phía sau và chuyển sang lần lặp tiếp theo
+
+     ```dart
+     for (var i = 0; i < 5; i++) {
+        if (i == 3) {
+           continue;
+        }
+        print(i);
+     }
+     ```
+
+## Điều khiển vòng lặp với label
+
+1. Đặt label cho vòng lặp
+
+     ```dart
+     outerLoop:
+     for (var i = 0; i < 5; i++) {
+        for (var j = 0; j < 5; j++) {
+           if (i == 2 && j == 2) {
+              break outerLoop;
+           }
+           print('$i $j');
+        }
+     }
+     ```
