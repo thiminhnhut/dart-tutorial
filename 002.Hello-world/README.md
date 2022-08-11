@@ -76,3 +76,9 @@
 | `<`     | Nhỏ hơn           | `1 < 2`  | `true`  |
 | `>=`    | Lớn hơn hoặc bằng | `1 >= 2` | `false` |
 | `<=`    | Nhỏ hơn hoặc bằng | `1 <= 2` | `true`  |
+
+## Toán tử kiểm tra kiểu dữ liệu
+
+| Toán tử     | Ý nghĩa               | Ví dụ                     | Kết quả        |
+| ----------- | --------------------- | ------------------------- | -------------- |
+| `is`, `is!` | Kiểm tra kiểu dữ liệu | `1 is int` `1 is! String` | `true` `false` |
