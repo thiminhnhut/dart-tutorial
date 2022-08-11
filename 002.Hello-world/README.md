@@ -329,3 +329,12 @@
    | `endsWith()`    | Kiểm tra chuỗi con kết thúc bằng   | `'abc'.endsWith('c')`        | `true`            |
    | `contains()`    | Kiểm tra chuỗi con có tồn tại      | `'abc'.contains('b')`        | `true`            |
    | `codeUnitAt()`  | Lấy mã ASCII của ký tự tại vị trí  | `'abc'.codeUnitAt(1)`        | `98`              |
+
+## Kiểu dữ liệu Boolean
+
+- Khai báo và sử dụng:
+
+   ```dart
+   bool isTrue = true;
+   bool isFalse = false;
+   ```
