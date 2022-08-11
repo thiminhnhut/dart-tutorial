@@ -52,3 +52,16 @@
     ```
 
     - Khi khai báo biến với từ khóa `const` chúng ta không thể thay đổi giá trị của biến.
+
+## Các toán tử số học
+
+| Toán tử | Ý nghĩa              | Ví dụ         |
+| ------- | -------------------- | ------------- |
+| `+`     | Cộng                 | `1 + 2 = 3`   |
+| `-`     | Trừ                  | `1 - 2 = -1`  |
+| `*`     | Nhân                 | `1 * 2 = 2`   |
+| `/`     | Chia                 | `1 / 2 = 0.5` |
+| `~/`    | Chia lấy phần nguyên | `1 ~/ 2 = 0`  |
+| `%`     | Chia lấy phần dư     | `1 % 2 = 1`   |
+| `++`    | Tăng 1 đơn vị        | `i++`         |
+| `--`    | Giảm 1 đơn vị        | `i--`         |
