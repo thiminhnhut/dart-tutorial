@@ -420,3 +420,62 @@
    list.removeRange(0, 1);
    print(list); // [4, 5]
    ```
+
+## Kiểu dữ liệu Map
+
+1. Khai báo và sử dụng:
+
+   ```dart
+   var map = new Map();
+   map['name'] = 'Nguyen Van A';
+   map['age'] = 20;
+
+   // Or
+   var map = {
+     'name': 'Nguyen Van A',
+     'age': 20
+   };
+   ```
+
+1. Một số thuộc tính của Map:
+
+   ```dart
+   var map = {
+     'name': 'Nguyen Van A',
+     'age': 20
+   };
+
+   print(map.length); // 2
+
+   print(map.isEmpty); // false
+   print(map.isNotEmpty); // true
+
+   print(map.keys); // (name, age)
+   print(map.values); // (Nguyen Van A, 20)
+   ```
+
+1. Một số hàm trong Map:
+
+   ```dart
+   var map = {
+     'name': 'Nguyen Van A',
+     'age': 20
+   };
+   print(map); // {name: Nguyen Van A, age: 20}
+
+   map.addAll({
+     'address': 'Viet Nam',
+     'phone': '0123456789'
+   });
+   print(map); // {name: Nguyen Van A, age: 20, address: Viet Nam, phone: 0123456789}
+
+   map.remove('address');
+   print(map); // {name: Nguyen Van A, age: 20, phone: 0123456789}
+
+   map.forEach((key, value) {
+     print('$key: $value');
+   });
+
+   map.clear();
+   print(map); // {}
+   ```
