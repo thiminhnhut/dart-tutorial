@@ -65,3 +65,14 @@
 | `%`     | Chia lấy phần dư     | `1 % 2 = 1`   |
 | `++`    | Tăng 1 đơn vị        | `i++`         |
 | `--`    | Giảm 1 đơn vị        | `i--`         |
+
+## Các toán tử so sánh
+
+| Toán tử | Ý nghĩa           | Ví dụ    | Kết quả |
+| ------- | ----------------- | -------- | ------- |
+| `==`    | So sánh bằng      | `1 == 2` | `false` |
+| `!=`    | So sánh khác      | `1 != 2` | `true`  |
+| `>`     | Lớn hơn           | `1 > 2`  | `false` |
+| `<`     | Nhỏ hơn           | `1 < 2`  | `true`  |
+| `>=`    | Lớn hơn hoặc bằng | `1 >= 2` | `false` |
+| `<=`    | Nhỏ hơn hoặc bằng | `1 <= 2` | `true`  |
