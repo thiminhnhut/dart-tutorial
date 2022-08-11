@@ -338,3 +338,85 @@
    bool isTrue = true;
    bool isFalse = false;
    ```
+
+## Kiểu dữ liệu List
+
+1. Khai báo và sử dụng:
+
+   ```dart
+   var list = new List(3);
+   list[0] = 1;
+   list[1] = 2;
+   list[2] = 3;
+
+   // Or
+   var list = [1, 2, 3];
+
+   // Or
+   var list = new List();
+   list.add(1);
+   list.add(2);
+   ```
+
+1. Một số hàm trong List:
+
+   ```dart
+   var list = [1, 2, 3];
+
+   print(list.length); // 3
+   
+   print(list.first); // 1
+   print(list.last); // 3
+
+   print(list.isEmpty); // false
+   print(list.isNotEmpty); // true
+
+   list.reverse();
+   print(list); // [3, 2, 1]
+
+   var list = [1];
+   print(list.single); // 1
+
+   ```
+
+1. Chèn phần tử vào list:
+
+   ```dart
+   var list = [1, 2, 3];
+   list.insert(1, 4);
+   print(list); // [1, 4, 2, 3]
+
+   list.addAll([5, 6]);
+   print(list); // [1, 4, 2, 3, 5, 6]
+
+   list.add(7);
+   print(list); // [1, 4, 2, 3, 5, 6, 7]
+   ```
+
+1. Cập nhật lại phần tử trong list:
+
+   ```dart
+   var list = [1, 2, 3];
+   list[1] = 4;
+   print(list); // [1, 4, 3]
+
+   list.range(1, 2, [5, 6]);
+   print(list); // [1, 5, 6, 3]
+   ```
+
+1. Xóa phần tử trong list:
+
+   ```dart
+   var list = [1, 2, 3, 4, 5, 6];
+   list.remove(2);
+   print(list); // [1, 3, 4, 5, 6]
+
+   list.removeAt(1);
+   print(list); // [1, 4, 5, 6]
+
+   list.removeLast();
+   print(list); // [1, 4, 5]
+
+   list.removeRange(0, 1);
+   print(list); // [4, 5]
+   ```
