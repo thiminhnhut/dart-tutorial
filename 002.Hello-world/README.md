@@ -105,7 +105,6 @@
 | `/=`    | Chia                                 | `a /= 2`                 | `1`     |
 | `??=`   | Nếu biến bằng `null` thì gán giá trị | `var a = null` `a ??= 1` | `1`     |
 
-
 ## Toán tử logic
 
 | Toán tử | Ý nghĩa | Ví dụ             | Kết quả |
@@ -132,7 +131,6 @@
      ```
 
 1. Vòng lặp `for in`:
-
 
     ```dart
     var list = [1, 2, 3];
@@ -200,5 +198,57 @@
            }
            print('$i $j');
         }
+     }
+     ```
+
+## Câu lệnh điều kiện if, if else, else if, switch case
+
+1. Câu lệnh `if`
+
+     ```dart
+     var a = 1;
+     if (a == 1) {
+        print('a = 1');
+     }
+     ```
+
+1. Câu lệnh `if else`
+
+     ```dart
+     var a = 1;
+     if (a == 1) {
+        print('a = 1');
+     } else {
+        print('a != 1');
+     }
+     ```
+
+1. Câu lệnh `else if`
+
+     ```dart
+    var a = 1;
+    if (a == 1) {
+        print('a = 1');
+    } else if (a == 2) {
+        print('a = 2');
+    } else {
+        print('a != 1 and a != 2');
+    }
+    ```
+
+1. Câu lệnh `switch case`
+
+     ```dart
+     var a = 1;
+     switch (a) {
+        case 1:
+           print('a = 1');
+           break;
+        case 2:
+           print('a = 2');
+           break;
+        default:
+           print('a != 1 and a != 2');
+           break;
      }
      ```
