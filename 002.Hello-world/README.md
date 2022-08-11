@@ -479,3 +479,101 @@
    map.clear();
    print(map); // {}
    ```
+
+## Function
+
+1. Khai báo function:
+
+   ```dart
+   void name_function() {
+     print('Hello World');
+   }
+
+   // Or
+   void name_function() => print('Hello World');
+
+   // Or
+   name_function() {
+       print('Hello World');
+   }
+   ```
+
+1. Gọi function:
+
+   ```dart
+   void name_function() {
+     print('Hello World');
+   }
+
+   void main() {
+     name_function();
+   }
+   ```
+
+1. Function có tham số và có kết quả trả về:
+
+   ```dart
+   int sum(int a, int b) {
+     return a + b;
+   }
+   ```
+
+1. Function có tham số tùy chọn:
+
+   ```dart
+   void name_function(String name, [int age]) {
+     print('Name: $name');
+     print('Age: $age');
+   }
+
+   void main() {
+     name_function('Nguyen Van A');
+     name_function('Nguyen Van A', 20);
+   }
+   ```
+
+1. Function có tên tham số tùy chọn:
+
+   ```dart
+   void name_function(String name, {int age}) {
+     print('Name: $name');
+     print('Age: $age');
+   }
+
+   void main() {
+     name_function('Nguyen Van A');
+     name_function('Nguyen Van A', age: 20);
+   }
+   ```
+
+1. Function có tham số có giá trị mặc định:
+
+   ```dart
+   void name_function(String name, {int age = 20}) {
+     print('Name: $name');
+     print('Age: $age');
+   }
+
+   void main() {
+     name_function('Nguyen Van A');
+     name_function('Nguyen Van A', age: 30);
+   }
+   ```
+
+1. Function đệ quy (recursive function):
+
+   ```dart
+   int factorial(int n) {
+     if (n == 0) {
+       return 1;
+     } else {
+       return n * factorial(n - 1);
+     }
+   }
+   ```
+
+1. Lambda function:
+
+   ```dart
+   int sum(a, b) => a + b;
+   ```
