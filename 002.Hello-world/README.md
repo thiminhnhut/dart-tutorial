@@ -296,3 +296,36 @@
    |               | So sánh 2 số  `a < b` ra `1`             | `1.compareTo(0)`   | `1`     |
    | `remainder()` | Lấy phần dư  của `a` chia cho `b`        | `5.remainder(2)`   | `1`     |
    | `truncate()`  | Làm tròn xuống và loại bỏ phần thập phân | `(1.9).truncate()` | `1`     |
+
+## Kiểu dữ liệu String
+
+1. Khai báo và ghép string:
+
+   ```dart
+   var number = 1;
+   String result = 'a + b = $number';
+   print(result); // a + b = 1
+   ```
+
+2. Một số hàm trên string:
+
+   | Hàm             | Ý nghĩa                            | Ví dụ                        | Kết quả           |
+   | --------------- | ---------------------------------- | ---------------------------- | ----------------- |
+   | `length`        | Độ dài của string                  | `'abc'.length`               | `3`               |
+   | `isEmpty`       | Kiểm tra string rỗng               | `''.isEmpty`                 | `true`            |
+   | `isNotEmpty`    | Kiểm tra string rỗng               | `'abc'.isNotEmpty`           | `true`            |
+   | `codeUnits`     | Mảng mã ASCII                      | `'abc'.codeUnits`            | `[97, 98, 99]`    |
+   | `toLowerCase()` | Chuyển string sang chữ thường      | `'ABC'.toLowerCase()`        | `'abc'`           |
+   | `toUpperCase()` | Chuyển string sang chữ hoa         | `'abc'.toUpperCase()`        | `'ABC'`           |
+   | `trim()`        | Loại bỏ khoảng trắng               | `' abc '.trim()`             | `'abc'`           |
+   | `trimLeft()`    | Loại bỏ khoảng trắng bên trái      | `' abc '.trimLeft()`         | `'abc '`          |
+   | `trimRight()`   | Loại bỏ khoảng trắng bên phải      | `' abc '.trimRight()`        | `' abc'`          |
+   | `compareTo()`   | So sánh 2 string `a != b` ra `-1`  | `'a'.compareTo('b')`         | `-1`              |
+   |                 | So sánh 2 string `a == b` ra `0`   | `'a'.compareTo('a')`         | `0`               |
+   | `replaceAll()`  | Thay thế chuỗi con bằng chuỗi khác | `'abc'.replaceAll('a', 'b')` | `'bbc'`           |
+   | `split()`       | Tách chuỗi thành mảng              | `'a b c'.split(' ')`         | `['a', 'b', 'c']` |
+   | `substring()`   | Lấy chuỗi con                      | `'abc'.substring(1, 2)`      | `'b'`             |
+   | `startsWith()`  | Kiểm tra chuỗi con bắt đầu bằng    | `'abc'.startsWith('a')`      | `true`            |
+   | `endsWith()`    | Kiểm tra chuỗi con kết thúc bằng   | `'abc'.endsWith('c')`        | `true`            |
+   | `contains()`    | Kiểm tra chuỗi con có tồn tại      | `'abc'.contains('b')`        | `true`            |
+   | `codeUnitAt()`  | Lấy mã ASCII của ký tự tại vị trí  | `'abc'.codeUnitAt(1)`        | `98`              |
