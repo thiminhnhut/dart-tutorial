@@ -484,6 +484,23 @@
    print(map); // {}
    ```
 
+## Kiểu dữ liệu Set
+
+1. Khai báo và sử dụng:
+
+   ```dart
+   var set = new Set();
+   set.add(1);
+   set.add(2);
+   set.add(3);
+
+   // Or
+   var set = {1, 2, 3};
+
+   // Or
+   var set = new Set.from([1, 2, 3]);
+   ```
+
 ## Kiểu dữ liệu `Queue`
 
 1. Khai báo và sử dụng:
