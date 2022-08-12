@@ -425,7 +425,7 @@
    print(list); // [4, 5]
    ```
 
-## Kiểu dữ liệu Map
+## Kiểu dữ liệu Map và HashMap
 
 1. Khai báo và sử dụng:
 
@@ -484,7 +484,7 @@
    print(map); // {}
    ```
 
-## Kiểu dữ liệu Set
+## Kiểu dữ liệu Set và HastSet
 
 1. Khai báo và sử dụng:
 
