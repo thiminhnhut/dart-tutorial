@@ -484,6 +484,50 @@
    print(map); // {}
    ```
 
+## Kiểu dữ liệu `Queue`
+
+1. Khai báo và sử dụng:
+
+   ```dart
+   var queue = new Queue();
+   queue.add(1);
+   queue.add(2);
+   queue.add(3);
+
+   print(queue); // {1, 2, 3}
+
+   // Or
+   var queue = new Queue.from([1, 2, 3]);
+   print(queue); // {1, 2, 3}
+   ```
+
+1. Một số thao tác trên `Queue`:
+
+   ```dart
+   var queue = new Queue.from([1, 2, 3]);
+
+   print(queue.first); // 1
+   print(queue.last); // 3
+
+   print(queue.isEmpty); // false
+   print(queue.isNotEmpty); // true
+
+   queue.add(4);
+   print(queue); // {1, 2, 3, 4}
+
+   queue.addFirst(0); // {0, 1, 2, 3, 4}
+   queue.addLast(5); // {0, 1, 2, 3, 4, 5}
+
+   queue.removeFirst();
+   print(queue); // {1, 2, 3, 4, 5}
+
+   queue.removeLast();
+   print(queue); // {1, 2, 3, 4}
+
+   queue.clear();
+   print(queue); // {}
+   ```
+
 ## Function
 
 1. Khai báo function:
